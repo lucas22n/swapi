@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWAPI</title>
+    <link rel="icon" type="image/x-icon" href="light-saber.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>STAR WARS API</h1>
+
+    <div id="paginatorcontainer">
+      <nav id="nav">
+        <button onclick="firstPage()" id="firstpage"><<</button>
+        <button onclick="prevPage()" id="prev"><</button>
+        <span id="left">...</span>
+        <div id="btns"></div>
+        <span id="right">...</span>
+        <button onclick="nextPage()" id="next">></button>
+        <button onclick="lastPage()" id="lastpage">>></button>
+      </nav>
+    </div>
+
+    <!--<div id="tarjeta1"></div>-->
+    <div id="tarjetascontainer"></div>
+    <br />
+
+    <div id="miModal" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+        <h3>Datos del planeta</h3>
+        <div id="contenidomodal"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
